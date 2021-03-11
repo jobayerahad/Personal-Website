@@ -1,0 +1,26 @@
+@import "./mixins";
+
+.container {
+  margin: 0 auto;
+  padding: 5rem 1rem;
+  max-width: 60rem !important;
+
+  @include respond(large_scr) {
+    max-width: 65rem !important;
+    padding: 5rem 0 !important;
+  }
+
+  @include respond(tab_land) {
+    max-width: 50rem !important;
+  }
+
+  @include respond(tab_port) {
+    margin: 0 auto !important;
+    max-width: 35rem !important;
+    padding: 3.5rem 1.5rem !important;
+  }
+
+  @include respond(phone) {
+    margin: 0 auto !important;
+  }
+}

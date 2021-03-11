@@ -1,0 +1,18 @@
+.services {
+  background-color: #eeeeee;
+}
+
+.card {
+  height: 100% !important;
+}
+
+.avatar {
+  width: 7rem !important;
+  height: auto !important;
+
+  &Container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+}

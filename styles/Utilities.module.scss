@@ -1,0 +1,52 @@
+.m {
+  &b {
+    &_1 {
+      margin-bottom: 0.5rem;
+    }
+
+    &_2 {
+      margin-bottom: 1rem;
+    }
+
+    &_3 {
+      margin-bottom: 1.5rem;
+    }
+
+    &_4 {
+      margin-bottom: 2rem;
+    }
+
+    &_5 {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  &t {
+    &_1 {
+      margin-top: 0.5rem;
+    }
+
+    &_2 {
+      margin-top: 1rem;
+    }
+
+    &_3 {
+      margin-top: 1.5rem;
+    }
+
+    &_4 {
+      margin-top: 2rem;
+    }
+
+    &_5 {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+.closeButton {
+  position: absolute !important;
+  right: 0.5rem !important;
+  top: 0.5rem !important;
+  color: #9e9e9e !important;
+}

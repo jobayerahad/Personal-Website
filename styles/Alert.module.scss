@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.icon {
+  color: #29b6f6;
+  font-size: 4rem;
+}
+
+.text {
+  text-align: center;
+}

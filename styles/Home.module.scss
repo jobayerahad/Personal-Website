@@ -1,0 +1,18 @@
+@import "./mixins";
+
+.content {
+  width: calc(100% - 240px);
+  margin-left: 240px;
+
+  @include respond(tab_port) {
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 4rem;
+  }
+
+  @include respond(phone) {
+    width: 100vw;
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+}
