@@ -23,21 +23,14 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
 # local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # vercel
 .vercel
 
-# package-lock
-package-lock.json
-
-# Firebase
-.firebase
-.firebaserc
-.firebase.json
+# typescript
+*.tsbuildinfo
+next-env.d.ts
