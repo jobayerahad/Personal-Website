@@ -1,0 +1,38 @@
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--mantine-color-gray-8);
+}
+
+p>span {
+  color: var(--mantine-color-brand-5);
+  font-weight: 600;
+}
+
+::selection {
+  color: var(--mantine-color-white);
+  background-color: var(--mantine-color-brand-5);
+  -webkit-text-fill-color: var(--mantine-color-white);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #dadada;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--mantine-color-brand-5);
+
+  &:hover {
+    background-color: var(--mantine-color-brand-6);
+  }
+}
+
+.error-text {
+  color: var(--mantine-color-error);
+}
