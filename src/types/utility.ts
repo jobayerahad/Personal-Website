@@ -1,3 +1,5 @@
+import { STATUS } from '@config/constants'
+
 export type MenuItem = {
   value: string
   label: string
@@ -15,6 +17,6 @@ export type TPaginatedRes<T> = {
 }
 
 export type actionRes = {
-  status: 'success' | 'error'
+  status: STATUS
   data: any
 }
