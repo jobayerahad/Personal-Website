@@ -1,3 +1,7 @@
+body {
+  background-color: var(--mantine-color-gray-0);
+}
+
 a {
   text-decoration: none;
 }
@@ -6,7 +10,7 @@ p {
   color: var(--mantine-color-gray-8);
 }
 
-p>span {
+p > span {
   color: var(--mantine-color-brand-5);
   font-weight: 600;
 }

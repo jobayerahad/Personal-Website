@@ -1,60 +1,52 @@
-import { Anchor, Container, Divider, Group, Text, Title } from '@mantine/core'
+import { Anchor, Box, Container, Divider, Group, Image, SimpleGrid, Text, Title } from '@mantine/core'
 import { AiFillGithub } from 'react-icons/ai'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6'
-import { MdAlternateEmail } from 'react-icons/md'
+import { IoIosMail } from 'react-icons/io'
 
 import styles from './page.module.css'
 
+const links = [
+  { link: 'mailto:jobayer.ahad@gmail.com', icon: <IoIosMail size={30} /> },
+  { link: 'https://github.com/jobayerahad', icon: <AiFillGithub size={30} /> },
+  { link: 'https://www.linkedin.com/in/jobayerahad', icon: <FaLinkedinIn size={30} /> },
+  { link: 'https://x.com/jobayerahad', icon: <FaXTwitter size={30} /> }
+]
+
 const UnderConstruction = () => (
   <main className={styles.main}>
-    <Container size="lg">
-      <Title c="gray.1" className={styles.title}>
-        Hello, I'm Jobayer Ahad
-      </Title>
-      <Divider color="gray.1" mb="xs" />
+    <Container size="xl">
+      <SimpleGrid cols={{ base: 1, md: 2 }}>
+        <Box className={styles.content}>
+          <Text c="dark">Hello,</Text>
 
-      <Text mb="xs" className={styles.text}>
-        I'm currently revamping my website to provide a better experience and showcase my work in software development.
-        Stay tuned for updates, and in the meantime, feel free to explore ways to stay connected with me below.
-      </Text>
+          <Title c="dark" mb="md">
+            I'm Jobayer Ahad
+          </Title>
 
-      <Text mb="md" className={styles.text}>
-        As a software developer specializing in React.JS, Node.JS, and MongoDB, I've been working at SBAC Bank PLC since
-        March 2022, delivering robust and scalable solutions. I’m excited to share more of my projects with you soon.
-      </Text>
+          <Text mb="md" c="dark">
+            As a software developer specializing in React.JS, Node.JS, and MongoDB, I've been working at SBAC Bank PLC
+            since March 2022, delivering robust and scalable solutions. I’m excited to share more of my projects with
+            you soon.
+          </Text>
 
-      <Text mb="xs" className={styles.text}>
-        Stay connected:
-      </Text>
+          <Text mb="xs" c="dark">
+            Stay connected:
+          </Text>
 
-      <Group className={styles.group}>
-        <MdAlternateEmail />
-        <Anchor href="mailto:jobayer.ahad@gmail.com" className={styles.anchor}>
-          jobayer.ahad@gmail.com
-        </Anchor>
-      </Group>
+          <Group>
+            {links.map(({ icon, link }) => (
+              <Anchor c="dark" href={link} target="_blank">
+                {icon}
+              </Anchor>
+            ))}
+          </Group>
+        </Box>
 
-      <Group className={styles.group}>
-        <FaLinkedinIn />
-        <Anchor href="https://www.linkedin.com/in/jobayerahad" className={styles.anchor}>
-          https://www.linkedin.com/in/jobayerahad
-        </Anchor>
-      </Group>
-
-      <Group className={styles.group}>
-        <FaXTwitter />
-        <Anchor href="https://x.com/jobayerahad" className={styles.anchor}>
-          https://x.com/jobayerahad
-        </Anchor>
-      </Group>
-
-      <Group className={styles.group}>
-        <AiFillGithub />
-        <Anchor href="https://github.com/jobayerahad" className={styles.anchor}>
-          https://github.com/jobayerahad
-        </Anchor>
-      </Group>
+        <Box>
+          <Image src="/under-construction.png" alt="Jobayer Ahad" />
+        </Box>
+      </SimpleGrid>
     </Container>
   </main>
 )
