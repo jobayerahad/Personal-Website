@@ -35,8 +35,8 @@ const UnderConstruction = () => (
           </Text>
 
           <Group>
-            {links.map(({ icon, link }) => (
-              <Anchor c="dark" href={link} target="_blank">
+            {links.map(({ icon, link }, index) => (
+              <Anchor c="dark" href={link} target="_blank" key={index}>
                 {icon}
               </Anchor>
             ))}
